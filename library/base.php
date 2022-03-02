@@ -24,9 +24,9 @@
                         foreach($arg[0] as $k =>$v){
                             $tmp[] =" `$k` = '$v'";
                         }
-                    $sql .= " WHERE ".implode(" AND ", $tmp);
+                        $sql .= " WHERE ".implode(" AND ", $tmp);
                     }else{
-                        $sql .= " ".$arg;
+                        $sql .= " ".$arg[0];
                     }
                     break;
             }

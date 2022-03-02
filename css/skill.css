@@ -1,0 +1,9 @@
+.skillsA {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.skillsA>*{
+    width: 50%;
+}

@@ -10,7 +10,8 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 0) {
-                        echo "<div>{$row['name']}<br>{$row['intro']}</div>";
+                        echo "<div class='skillsB'><img src='img/skills/" . $row['img'] . "'><div >{$row['name']}<br>";
+                        echo "{$row['intro']}</div></div>";
                     }
                 }
                 ?>
@@ -18,14 +19,17 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
 
         </div>
         <div class="col-12 col-sm-6 p-5">
-            <h4>資料庫</h4>
-            <?php
-            foreach ($rows as $row) {
-                if ($row['category'] == 1) {
-                    echo "<div>{$row['name']}<br>{$row['intro']}</div>";
+            <h4>版控、資料庫</h4>
+            <div class="skillsA">
+                <?php
+                foreach ($rows as $row) {
+                    if ($row['category'] == 1) {
+                        echo "<div class='skillsB'><img src='img/skills/" . $row['img'] . "'><div >{$row['name']}<br>";
+                        echo "{$row['intro']}</div></div>";
+                    }
                 }
-            }
-            ?>
+                ?>
+            </div>
         </div>
         <div class="col-12 col-sm-6 p-5">
             <h4>套件</h4>
@@ -33,7 +37,8 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 2) {
-                        echo "<div>{$row['name']}<br>{$row['intro']}</div>";
+                        echo "<div class='skillsB'><img src='img/skills/" . $row['img'] . "'><div >{$row['name']}<br>";
+                        echo "{$row['intro']}</div></div>";
                     }
                 }
                 ?>
@@ -42,13 +47,16 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
         </div>
         <div class="col-12 col-sm-6 p-5">
             <h4>框架</h4>
-            <?php
-                    foreach($rows as $row){
-                        if($row['category'] == 3){
-                            echo "<div>{$row['name']}<br>{$row['intro']}</div>";
-                        }
+            <div class="skillsA">
+                <?php
+                foreach ($rows as $row) {
+                    if ($row['category'] == 3) {
+                        echo "<div class='skillsB'><img src='img/skills/" . $row['img'] . "'><div >{$row['name']}<br>";
+                        echo "{$row['intro']}</div></div>";
                     }
+                }
                 ?>
+            </div>
         </div>
     </div>
 </div>

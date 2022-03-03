@@ -1,4 +1,4 @@
-<div class="container" style="padding-top:100px; margin-top:100px;" id ="collection">
+<div class="container" style="padding-top:100px; margin-top:100px; min-height:600px;" id ="collection">
     <div class="row">
         <div class="col-12">
             相關程式語言(框架)
@@ -24,6 +24,7 @@
                     <img src="img/collections/<?= $row['img']; ?>">
                     <div class="collectionBG">
                         <div class="collectionModal" onclick="modal(<?= $row['id']; ?>)">
+                        <i class="fa-solid fa-computer-mouse"></i>
                         </div>
                     </div>
                 </div>

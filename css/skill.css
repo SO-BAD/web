@@ -4,6 +4,20 @@
     flex-wrap: wrap;
 }
 
-.skillsA>*{
+.skillsA>div {
     width: 50%;
+    display:flex;
+    align-items: flex-start;
+}
+.skillsA>div>img{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin-bottom:5px ;
+
+}
+.skillsA>div>div{
+    width: 70%;
+    padding: 5px;
+    margin-bottom:5px ;
 }

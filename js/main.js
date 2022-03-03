@@ -1,6 +1,6 @@
 function adjModal() {
     $(".modalBG").css("height", window.outerHeight + "px");
-    let h = (window.outerHeight/2 > 250 )? (window.outerHeight/2-150):0;
+    let h = (window.innerHeight/2 > 250 )? (window.innerHeight/2-250):0;
     $(".modalBG").css("padding-top", h + "px");
 }
 var data;

@@ -39,11 +39,16 @@
     margin:auto;
     margin-top: 50%;
     width: 30%;
-    height: 20%;
+    height: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     transform: rotateY(90deg);
     transition: 0.8s;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color:#424242;
 }
 .collection:hover  .collectionModal{
     transition: 0.8s;

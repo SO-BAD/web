@@ -1,7 +1,7 @@
 .menuBox {
     position: relative;
-    background-color: aliceblue;
-    height: 80px;
+    background-color: #d4d8db;
+    height: 60px;
 }
 
 .menuBox>div {

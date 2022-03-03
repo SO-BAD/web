@@ -34,6 +34,10 @@
     include "include/skills.php";
     include "include/collections.php";
     ?>
+
+    <footer style= "width:100%;height:200px;">
+        
+    </footer>
 </body>
 
 </html>

@@ -1,8 +1,16 @@
+.top {
+    top: 0px;
+    z-index: 50;
+    box-shadow: 0  6px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(255,255,255,.1);
+}
+
+
 .menuBox {
     position: relative;
-    background-color: #d4d8db;
     height: 60px;
 }
+
 
 .menuBox>div {
     position: absolute;
@@ -10,10 +18,28 @@
     right: 0px;
     display: flex;
 }
-.menuBox>div>a{
+
+.menuBox>div>a {
     margin-right: 30px;
     padding: 5px 10px;
     text-decoration: none;
-    color:black;
+    color:white;
     font-size: 24px;
+    padding: 5px 20px;
+}
+
+
+.active {
+    position: relative;
+}
+
+.active::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: black;
 }

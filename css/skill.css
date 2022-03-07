@@ -1,11 +1,28 @@
+.skill_category{
+    border: 1px solid #f2f2f2;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.8s;
+}
+.skill_category:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.8s;
+}
+
+
 .skillsA {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
 }
-
+.col-12.col-sm-6.p-5>h4{
+    color:white;
+}
 .skillsA>div {
     width: 50%;
+    padding: 5%;
     display:flex;
     align-items: flex-start;
 }
@@ -17,6 +34,7 @@
 
 }
 .skillsA>div>div{
+    text-align: left;
     width: 70%;
     padding: 5px;
     margin-bottom:5px ;

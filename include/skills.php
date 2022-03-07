@@ -2,11 +2,11 @@
 $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
 
 ?>
-<div class="container text-center" style="padding-top:100px; margin-top:100px;" id="skill">
+<div class="container text-center" style="padding-top:60px; margin-top:0px;" id="skill">
     <div class="row">
         <div class="col-12 col-sm-6 p-5">
             <h4>程式語言</h4>
-            <div class="skillsA">
+            <div class="skillsA skill_category">
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 0) {
@@ -20,7 +20,7 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
         </div>
         <div class="col-12 col-sm-6 p-5">
             <h4>版控、資料庫</h4>
-            <div class="skillsA">
+            <div class="skillsA skill_category">
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 1) {
@@ -33,7 +33,7 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
         </div>
         <div class="col-12 col-sm-6 p-5">
             <h4>套件</h4>
-            <div class="skillsA">
+            <div class="skillsA skill_category">
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 2) {
@@ -47,7 +47,7 @@ $rows = $Skill->all(['resume_id' => 1], " ORDER BY `category`");
         </div>
         <div class="col-12 col-sm-6 p-5">
             <h4>框架</h4>
-            <div class="skillsA">
+            <div class="skillsA skill_category">
                 <?php
                 foreach ($rows as $row) {
                     if ($row['category'] == 3) {

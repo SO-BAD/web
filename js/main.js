@@ -28,3 +28,18 @@ function showData(table) {
             break;
     }
 }
+
+window.addEventListener("scroll",()=>{
+    let h = window.scrollY;
+    if( h < Math.floor($("#collection").offset().top)){
+        $(".item").removeClass("active");
+        $(".item").eq(0).addClass("active");
+    }else{
+        $(".item").removeClass("active");
+        $(".item").eq(1).addClass("active");
+    }
+})
+
+function closeModal(){
+    $(".modalBG").css("display", "none");
+}

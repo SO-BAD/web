@@ -1,10 +1,9 @@
-<div class="container-fluid position-fixed" style="top:0px; z-index:50;">
+<div class="container-fluid position-fixed top" >
     <div class="row">
         <div class="col-12  menuBox">
-            <div>
-                <a href="#home"><span>home</span></a>
-                <a href="#skill"><span>skill</span></a>
-                <a href="#collection"><span>collection</span></a>
+            <div style="display:flex;">
+                <a href="#skill" class=" item active" onclick="active(this)">程式語言</a>
+                <a href="#collection" class="item" onclick="active(this)">作品</a>
             </div>
         </div>
     </div>

@@ -1,11 +1,9 @@
 .skill_category{
     border: 1px solid #f2f2f2;
     margin-top: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     transition: 0.8s;
 }
 .skill_category:hover{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: 0.8s;
 }
 
@@ -16,6 +14,20 @@
     flex-wrap: wrap;
     background-color: white;
     border-radius: 18px;
+}
+.skillsA:hover{
+    animation: light 2s linear infinite;
+}
+@keyframes light {
+    0%,100%{
+        box-shadow: none;
+    }
+    50%{
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.4),
+        0 0 40px rgba(255, 255, 255, 0.3),
+        0 0 80px rgba(255, 255, 255, 0.1);
+    }
 }
 .col-12.col-sm-6.p-5>h4{
     color:white;
